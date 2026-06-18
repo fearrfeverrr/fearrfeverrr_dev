@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		@import url('https://fearrfeverrr.neocities.org/EagleLake-Regular.ttf');
+		body {
+			font-family: "EagleLake-Regular", monospace;
+			background: #131313;
+			background-image: url('https://export-download.canva.com/LlWgw/DAHMimLlWgw/14/0/0001-1233366832754879561.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20260614%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260614T145026Z&X-Amz-Expires=44080&X-Amz-Signature=fa9914491d80eb296103ed37474aa26238bc31be26452ffea09f8ebc50d8da92&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27Untitled%2520design.jpg&response-expires=Mon%2C%2015%20Jun%202026%2003%3A05%3A06%20GMT');
+		}
+
+		.wrapper {
+			border: 4px solid #c64a86;
+			width: 615px;
+			height: 385px;
+			box-shadow: 6px 6px 0 #ecb4d1;
+			background-color: #ecb4d1;
+			border-radius: 4px;
+			margin: auto;
+			margin-top: calc(50vh - 190px);
+		}
+
+		.wrapper::after {
+			content: " ";
+			display: block;
+			border: 2px solid #c64a86;
+			border-top: 0;
+			width: 615px;
+			height: 9px;
+			box-shadow: 3px 3px 0 #ecb4d1;
+			position: center;
+			left: -3px;
+			top: -3px;
+			border-radius: 0 0 5px 5px;
+		}
+
+		.content {
+			background: #f2dce7;
+			border-radius: 3px;
+		}
+
+		.menu a {
+			font-family: "EagleLake-Regular", sans-serif;
+			border: 3px solid #c64a86;
+			border-bottom-color: #ecb4d1;
+			color: #131313;
+			text-decoration: none;
+			display: inline-block;
+			height: 45px;
+			font-size: 18px;
+			width: 128px;
+			margin-left: -3px;
+			border-radius: 3px;
+			line-height: 40px;
+			position: relative;
+		}
+
+		.menu a:hover {
+			position: relative;
+			top: 4px;
+		}
+
+		.menu a:hover::before {
+			background-color: #ecb4d1;
+			display: block;
+			content: " " ;
+			height: 4px;
+			width: calc(100% + 6px);
+			position: absolute;
+			top: -5px;
+			left: -3px;
+		}
+
+		.menu a::after {
+			background-color: #f2dce7;
+			display: block;
+			content: " " ;
+			height: 3px;
+			width: 90px;
+			margin: auto;
+		}
+
+		.screen {
+			width: 512px;
+			height: 294px;
+			background: #f2dce7;
+			border: 3px solid #c64a86;
+			margin: auto;
+			margin-top: 12px;
+			margin-bottom: 10px;
+			position: center;
+			border-radius: 3px;
+		}
+
+		iframe {
+			border: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		.menu {
+			margin: auto;
+			text-align: center;
+			margin-top: 18px;
+		}
+
+		.marquee {
+		  overflow: hidden;
+		  display: flex;
+		  line-height: 20px;
+		  position: absolute;
+		  width: 100%;
+		  bottom: -5px;
+		  z-index: 1;
+		}
+
+		.marquee span{
+			white-space: nowrap;
+		}
+
+		.pipi {
+		  position: absolute;
+		  left: 20px;
+		  bottom: 0;
+		  z-index: 2;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="wrapper">
+		<div class="screen">
+			<iframe name="content" src="home.html"></iframe>
+			<img src="https://fearrfeverrr.neocities.org/7.png" class="pipi">
+			<div class="marquee">
+				<span>
+					<img src="https://fearrfeverrr.neocities.org/1.png">
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<img src="https://fearrfeverrr.neocities.org/2.png">
+					<img src="https://fearrfeverrr.neocities.org/3.png">
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<img src="https://fearrfeverrr.neocities.org/4.png">
+					<img src="https://fearrfeverrr.neocities.org/5.png">
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<img src="https://fearrfeverrr.neocities.org/7.png">
+					&nbsp;
+					<img src="https://fearrfeverrr.neocities.org/1.png">
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<img src="https://fearrfeverrr.neocities.org/6.png">
+					&nbsp;
+					&nbsp;
+					<img src="https://fearrfeverrr.neocities.org/7.png">
+					&nbsp;
+					&nbsp;
+					<img src="https://fearrfeverrr.neocities.org/1.png">
+				</span>
+			</div>
+		</div>
+		<div class="subtext"></div>
+		<div class="menu">
+			<a href="home.html" target="content">home</a><a href="art.html" target="content">art</a><a href="Jesus.html" target="content">Jesus</a><a href="dev.html" target="content">dev</a>
+		</div>
+		
+	</div>
+
+	<script type="text/javascript">
+		function Marquee(selector, speed) {
+			const parentSelector = document.querySelector(selector);
+			const clone = parentSelector.innerHTML;
+			const firstElement = parentSelector.children[0];
+			let i = 0;
+			console.log(firstElement);
+			parentSelector.insertAdjacentHTML('beforeend', clone);
+			parentSelector.insertAdjacentHTML('beforeend', clone);
+
+			setInterval(function () {
+				firstElement.style.marginLeft = `-${i}px`;
+				if (i > firstElement.clientWidth) {
+					i = 0;
+				}
+				i = i + speed;
+			}, 0);
+		}
+
+		window.addEventListener('load', Marquee('.marquee', 0.4))
+
+	</script>
+</body>
+</html>

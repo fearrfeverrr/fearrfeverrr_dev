@@ -1,0 +1,109 @@
+body {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    background-image: #ecb4d1;
+    margin-top: 30px;
+}
+
+body.page {
+    background-image: #ecb4d1;
+    font-size: 15px;
+    text-align:center;
+    color: #131313;
+    line-height: 1.2rem;
+    background-color: #F2dce7;
+    padding: 20px;
+    margin: 0;
+}
+
+section {
+    width: 400px;
+    margin: auto;
+    padding-top: 80px;
+    text-align: center;
+}
+article {
+    background-color: #F2dce7;
+    width: 410px;
+    float: left;
+    border-radius: 5px;
+    border: solid 1px #c64a86;
+    padding: 4px;
+    height: 270px;
+}
+h1 {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: 0.5px;
+}
+h2 {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    color: #131313;
+    margin: 0px;
+    padding: 0px;
+}
+header {
+    width: 100%;
+    font-size: 9px;
+    letter-spacing: 1px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+nav {
+    position: relative;
+    left: -50px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #131313;
+}
+
+#sheep {
+    position: relative;
+    top: 5px;
+    left: 10px;
+    width: 90px;
+}
+
+article a {
+    text-decoration: none;
+    color:#131313;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+article iframe {
+    border: 0;
+    height: 100%;
+    width: 100%;
+}
+
+html {
+    scrollbar-width: thin;
+    scrollbar-color: #c64a86 #ecb4d1; /* thumb and track color */
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ecb4d1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c64a86; 
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #c64a86;
+}
